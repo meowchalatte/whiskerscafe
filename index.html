@@ -1,63 +1,132 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f7f3e9">
+
   <title>Whiskers' Cafe — A little whisk of happiness</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="announcement">A cozy little corner for matcha lovers & cat people ♡</div>
+
+  <div class="announcement">
+    A cozy little corner for matcha lovers & cat people ♡
+  </div>
+
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Whiskers' Cafe home">
       <span class="brand-mark">w<span>✿</span></span>
       <span class="brand-name">Whiskers'<small> CAFE</small></span>
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
     <nav id="mainNav">
       <a href="#home">Home</a>
       <a href="#menu">Our menu</a>
       <a href="#about">Our story</a>
-      <button class="cart-nav" id="openCart">Your bag <span id="cartCount">0</span></button>
+      <button class="cart-nav" id="openCart">
+        Your bag <span id="cartCount">0</span>
+      </button>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO SECTION -->
     <section class="hero section-wrap" id="home">
+
       <div class="hero-copy">
         <p class="eyebrow">SIP SLOWLY. STAY AWHILE.</p>
-        <h1>A little whisk<br>of <em>happiness.</em></h1>
-        <p class="hero-description">Matcha, coffee, sweet treats, and a cozy place for every cat lover.</p>
+
+        <h1>
+          A little whisk<br>
+          of <em>happiness.</em>
+        </h1>
+
+        <p class="hero-description">
+          Matcha, coffee, sweet treats, and a cozy place for every cat lover.
+        </p>
+
         <div class="hero-actions">
-          <a class="button button-dark" href="#menu">Explore the menu <span>↗</span></a>
-          <a class="text-link" href="#about">Get to know us</a>
+          <a class="button button-dark" href="#menu">
+            Explore the menu <span>↗</span>
+          </a>
+
+          <a class="text-link" href="#about">
+            Get to know us
+          </a>
         </div>
-        <div class="hero-note"><span class="paw">♡</span> Made with love (and a little cat hair).</div>
+
+        <div class="hero-note">
+          <span class="paw">♡</span>
+          Made with love (and a little cat hair).
+        </div>
       </div>
+
       <div class="hero-art">
         <div class="sun-shape"></div>
+
         <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1000&q=85" alt="A creamy iced matcha latte">
+          <img
+            src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1000&q=85"
+            alt="A creamy iced matcha latte"
+          >
         </div>
-        <div class="floating-sticker sticker-top">freshly<br>whisked ♡</div>
-        <div class="floating-sticker sticker-bottom">purr-fect<br>little break</div>
-        <span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✦</span>
+
+        <div class="floating-sticker sticker-top">
+          freshly<br>whisked ♡
+        </div>
+
+        <div class="floating-sticker sticker-bottom">
+          purr-fect<br>little break
+        </div>
+
+        <span class="sparkle sparkle-one">✳</span>
+        <span class="sparkle sparkle-two">✦</span>
       </div>
+
     </section>
 
+
+    <!-- WELCOME STRIP -->
     <section class="welcome-strip">
-      <span>GOOD DRINKS</span><b>✳</b><span>SOFT MOMENTS</span><b>✳</b><span>HAPPY PAWS</span><b>✳</b><span>GOOD DRINKS</span>
+      <span>GOOD DRINKS</span>
+      <b>✳</b>
+      <span>SOFT MOMENTS</span>
+      <b>✳</b>
+      <span>HAPPY PAWS</span>
+      <b>✳</b>
+      <span>GOOD DRINKS</span>
     </section>
 
+
+    <!-- MENU SECTION -->
     <section class="menu-section section-wrap" id="menu">
+
       <div class="section-heading">
-        <div><p class="eyebrow">A LITTLE SOMETHING FOR YOU</p><h2>Made to make<br>you <em>smile.</em></h2></div>
-        <p>Find your new favorite sip. Every cup is prepared with care, one whisk at a time.</p>
+        <div>
+          <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+          <h2>Made to make<br>you <em>smile.</em></h2>
+        </div>
+
+        <p>
+          Find your new favorite sip. Every cup is prepared with care,
+          one whisk at a time.
+        </p>
       </div>
+
       <div class="category-tabs" id="categoryTabs">
         <button class="active" data-category="All">All treats</button>
         <button data-category="Matcha">Matcha</button>
@@ -65,67 +134,230 @@
         <button data-category="Non-coffee">Non-coffee</button>
         <button data-category="Treats">Treats</button>
       </div>
+
       <div class="product-grid" id="productGrid"></div>
+
     </section>
 
+
+    <!-- ABOUT SECTION -->
     <section class="about-section" id="about">
+
       <div class="about-inner section-wrap">
+
         <div class="about-photo">
-          <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=85" alt="A relaxed cat resting">
-          <span class="photo-caption">your new favorite hangout ♡</span>
+          <img
+            src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=85"
+            alt="A relaxed cat resting"
+          >
+
+          <span class="photo-caption">
+            your new favorite hangout ♡
+          </span>
         </div>
+
         <div class="about-copy">
-          <p class="eyebrow">A CAFE WITH A LITTLE EXTRA PURR-SONALITY</p>
-          <h2>Come for the matcha.<br><em>Stay for the cats.</em></h2>
-          <p>Whiskers' Cafe is imagined as a warm, welcoming nook for slow sips, sweet treats, and good company. Whether you're a matcha enthusiast or a devoted cat person, there's a little something here for you.</p>
-          <a class="text-link" href="#menu">Find your favorite sip ↗</a>
+          <p class="eyebrow">
+            A CAFE WITH A LITTLE EXTRA PURR-SONALITY
+          </p>
+
+          <h2>
+            Come for the matcha.<br>
+            <em>Stay for the cats.</em>
+          </h2>
+
+          <p>
+            Whiskers' Cafe is imagined as a warm, welcoming nook for slow
+            sips, sweet treats, and good company. Whether you're a matcha
+            enthusiast or a devoted cat person, there's a little something
+            here for you.
+          </p>
+
+          <a class="text-link" href="#menu">
+            Find your favorite sip ↗
+          </a>
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- CLOSING SECTION -->
     <section class="closing-note section-wrap">
+
       <span class="little-cat"> ฅ^•ﻌ•^ฅ </span>
-      <h2>Your day deserves<br>a <em>little treat.</em></h2>
-      <a class="button button-dark" href="#menu">Order something lovely</a>
+
+      <h2>
+        Your day deserves<br>
+        a <em>little treat.</em>
+      </h2>
+
+      <a class="button button-dark" href="#menu">
+        Order something lovely
+      </a>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
-    <a class="footer-brand" href="#home">Whiskers' Cafe <span>♡</span></a>
+    <a class="footer-brand" href="#home">
+      Whiskers' Cafe <span>♡</span>
+    </a>
+
     <p>Made with love, matcha, and meows.</p>
-    <small>© <span id="year"></span> Whiskers' Cafe. Demo website draft.</small>
+
+    <small>
+      © <span id="year"></span> Whiskers' Cafe. Demo website draft.
+    </small>
   </footer>
 
+
+  <!-- CART BACKDROP -->
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
-    <div class="drawer-header"><div><p class="eyebrow">YOUR LITTLE BAG</p><h2>Your order</h2></div><button class="close-drawer" id="closeCart" aria-label="Close cart">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-bottom">
-      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₱0.00</strong></div>
-      <p class="cart-hint">Delivery fees, if any, will be confirmed by the cafe.</p>
-      <button class="button button-dark full-width" id="checkoutButton">Continue to checkout</button>
+
+
+  <!-- CART DRAWER -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Shopping cart"
+    aria-hidden="true"
+  >
+
+    <div class="drawer-header">
+      <div>
+        <p class="eyebrow">YOUR LITTLE BAG</p>
+        <h2>Your order</h2>
+      </div>
+
+      <button
+        class="close-drawer"
+        id="closeCart"
+        aria-label="Close cart"
+      >
+        ×
+      </button>
     </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-bottom">
+
+      <div class="subtotal">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₱0.00</strong>
+      </div>
+
+      <p class="cart-hint">
+        Delivery fees, if any, will be confirmed by the cafe.
+      </p>
+
+      <button class="button button-dark full-width" id="checkoutButton">
+        Continue to checkout
+      </button>
+
+    </div>
+
   </aside>
 
+
+  <!-- CHECKOUT MODAL -->
   <div class="modal-backdrop" id="checkoutBackdrop">
-    <section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
-      <button class="close-drawer modal-close" id="closeCheckout" aria-label="Close checkout">×</button>
-      <p class="eyebrow">ALMOST THERE!</p><h2 id="checkoutTitle">A few little details.</h2>
+
+    <section
+      class="checkout-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="checkoutTitle"
+    >
+
+      <button
+        class="close-drawer modal-close"
+        id="closeCheckout"
+        aria-label="Close checkout"
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">ALMOST THERE!</p>
+
+      <h2 id="checkoutTitle">
+        A few little details.
+      </h2>
+
+
+      <!-- UPDATED CHECKOUT FORM -->
       <form id="checkoutForm">
-        <label>Your name<input name="customer" required placeholder="e.g. Alex Santos"></label>
-        <label>Contact number<input name="contact" required type="tel" placeholder="09XX XXX XXXX"></label>
-        <div class="form-row">
-          <label>Order type<select name="orderType" required><option value="Takeout">Takeout</option><option value="Dine-in">Dine-in</option></select></label>
-          <label>Payment<select name="payment" required><option value="Cash">Cash</option><option value="GCash">GCash (manual confirmation)</option></select></label>
+
+        <label>
+          Your name
+          <input
+            name="customer"
+            type="text"
+            required
+            placeholder="e.g. Alex Santos"
+            autocomplete="name"
+          >
+        </label>
+
+
+        <label>
+          Username
+          <input
+            name="username"
+            type="text"
+            required
+            placeholder="Enter your social media username"
+          >
+        </label>
+
+
+        <label>
+          Recipient <span class="optional-label">(Optional)</span>
+          <input
+            name="recipient"
+            type="text"
+            placeholder="Who is this order for?"
+          >
+        </label>
+
+
+        <div class="checkout-total">
+          <span>Order total</span>
+          <strong id="checkoutTotal">₱0.00</strong>
         </div>
-        <label>Special instructions<textarea name="notes" rows="3" placeholder="Less ice, no sugar, etc."></textarea></label>
-        <div class="checkout-total"><span>Order total</span><strong id="checkoutTotal">₱0.00</strong></div>
-        <button class="button button-dark full-width" type="submit">Place demo order</button>
-        <p class="form-disclaimer">Draft mode: this demo saves the order in this browser only. Google Sheets connection comes in a later step.</p>
+
+
+        <button
+          class="button button-dark full-width"
+          type="submit"
+        >
+          Place Order
+        </button>
+
+
+        <p class="form-disclaimer">
+          Please double-check your details before placing your order.
+          Your order will be sent to Whiskers' Cafe for confirmation.
+        </p>
+
       </form>
+
+
+      <!-- ORDER SUCCESS MESSAGE -->
       <div class="success-message" id="successMessage" hidden></div>
+
     </section>
+
   </div>
+
+
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
+
 </body>
 </html>
